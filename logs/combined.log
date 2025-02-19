@@ -1,0 +1,4 @@
+2025-02-19 17:12:46 [info]: Server is running on port 3000
+2025-02-19 17:12:55 [warn]: Route not found: GET /api/v1/test-error
+2025-02-19 17:12:55 [error]: Request failed Can't find /api/v1/test-error on this server!
+2025-02-19 17:12:55 [info]: GET /api/v1/test-error 404 8.990 ms - 1072
