@@ -2,3 +2,122 @@
 2025-02-19 18:06:44 [error]: Request failed Can't find / on this server!
 2025-02-19 18:06:44 [error]: Request failed Can't find /favicon.ico on this server!
 2025-02-19 18:10:59 [error]: Request failed Can't find /auth/login on this server!
+2025-02-19 20:22:51 [error]: Request failed Can't find /api/v1/users on this server!
+2025-02-19 20:23:01 [error]: Request failed [
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "fullname"
+    ],
+    "message": "Required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "username"
+    ],
+    "message": "Required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "email"
+    ],
+    "message": "Required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "password"
+    ],
+    "message": "Required"
+  }
+]
+2025-02-19 20:23:27 [error]: Request failed [
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "username"
+    ],
+    "message": "Required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "email"
+    ],
+    "message": "Required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "password"
+    ],
+    "message": "Required"
+  }
+]
+2025-02-19 20:28:00 [error]: Request failed [
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "username"
+    ],
+    "message": "Required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "email"
+    ],
+    "message": "Required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "password"
+    ],
+    "message": "Required"
+  }
+]
+2025-02-19 20:30:42 [error]: Request failed Access denied for user 'root'@'localhost' (using password: NO)
+2025-02-19 20:32:56 [error]: Request failed Access denied for user 'root'@'localhost' (using password: NO)
+2025-02-19 20:34:59 [error]: Request failed Access denied for user 'root'@'localhost' (using password: NO)
+2025-02-19 20:35:20 [error]: Request failed Access denied for user 'root'@'localhost' (using password: NO)
+2025-02-19 20:37:38 [error]: Request failed Access denied for user 'root'@'localhost' (using password: NO)
+2025-02-19 20:41:07 [error]: Request failed Access denied for user 'root'@'localhost' (using password: NO)
+2025-02-19 20:41:15 [error]: Request failed Access denied for user 'root'@'localhost' (using password: NO)
+2025-02-19 20:47:45 [error]: Request failed Access denied for user 'root'@'localhost' (using password: NO)
+2025-02-19 20:49:20 [error]: Request failed Access denied for user 'root'@'localhost' (using password: NO)
+2025-02-19 20:49:32 [error]: Request failed Access denied for user 'root'@'localhost' (using password: NO)
+2025-02-19 20:57:25 [error]: Request failed Access denied for user 'root'@'localhost' (using password: NO)
+2025-02-19 21:00:04 [error]: Request failed Access denied for user 'root'@'localhost' (using password: NO)
+2025-02-19 21:00:10 [error]: Request failed Access denied for user 'root'@'localhost' (using password: NO)
+2025-02-19 21:06:07 [error]: Request failed Access denied for user 'root'@'localhost' (using password: NO)
+2025-02-19 21:06:17 [error]: Request failed Access denied for user 'root'@'localhost' (using password: NO)
+2025-02-19 21:06:20 [error]: Request failed Access denied for user 'root'@'localhost' (using password: NO)
+2025-02-19 21:10:26 [error]: Request failed Access denied for user 'root'@'localhost' (using password: NO)
+2025-02-19 21:10:26 [error]: Request failed Access denied for user 'root'@'localhost' (using password: NO)
+2025-02-19 21:35:49 [error]: Request failed Access denied for user 'root'@'localhost' (using password: NO)
+2025-02-19 21:44:31 [error]: Request failed Email already registered
+2025-02-19 21:44:36 [error]: Request failed Username already taken
+2025-02-19 21:47:34 [error]: Request failed insert into `users` (`email`, `fullname`, `id`, `password`, `username`) values ('john2@example.com', 'john', '2c748cf7-903f-4801-90bc-1b65047c0921', '$2b$10$WQvFeNdzgQ.dlu9ePHwXjes/7cUchuuO.bng1ozTIEECyryUxGPnm', 'john2') - Data truncated for column 'id' at row 1

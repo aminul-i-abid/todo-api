@@ -17,3 +17,174 @@
 2025-02-19 18:18:59 [info]: Server is running on port 3000
 2025-02-19 18:40:17 [info]: Server is running on port 3000
 2025-02-19 18:43:43 [info]: Server is running on port 3000
+2025-02-19 20:22:08 [info]: Server is running on port 3000
+2025-02-19 20:22:51 [warn]: Route not found: POST /api/v1/users
+2025-02-19 20:22:51 [error]: Request failed Can't find /api/v1/users on this server!
+2025-02-19 20:22:51 [info]: POST /api/v1/users 404 22.797 ms - 1062
+2025-02-19 20:23:01 [error]: Request failed [
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "fullname"
+    ],
+    "message": "Required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "username"
+    ],
+    "message": "Required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "email"
+    ],
+    "message": "Required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "password"
+    ],
+    "message": "Required"
+  }
+]
+2025-02-19 20:23:01 [info]: POST /api/v1/users/register 500 6.404 ms - 2955
+2025-02-19 20:23:27 [error]: Request failed [
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "username"
+    ],
+    "message": "Required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "email"
+    ],
+    "message": "Required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "password"
+    ],
+    "message": "Required"
+  }
+]
+2025-02-19 20:23:27 [info]: POST /api/v1/users/register 500 2.610 ms - 2477
+2025-02-19 20:26:29 [info]: Server is running on port 3000
+2025-02-19 20:27:51 [info]: Server is running on port 3000
+2025-02-19 20:27:58 [info]: Server is running on port 3000
+2025-02-19 20:28:00 [info]: POST /api/v1/users/register 400 18.199 ms - 83
+2025-02-19 20:28:00 [error]: Request failed [
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "username"
+    ],
+    "message": "Required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "email"
+    ],
+    "message": "Required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "password"
+    ],
+    "message": "Required"
+  }
+]
+2025-02-19 20:29:02 [info]: Server is running on port 3000
+2025-02-19 20:29:04 [info]: POST /api/v1/users/register 400 13.710 ms - 83
+2025-02-19 20:30:32 [info]: POST /api/v1/users/register 400 1.820 ms - 118
+2025-02-19 20:30:42 [error]: Request failed Access denied for user 'root'@'localhost' (using password: NO)
+2025-02-19 20:30:42 [info]: POST /api/v1/users/register 500 42.390 ms - 1316
+2025-02-19 20:32:56 [error]: Request failed Access denied for user 'root'@'localhost' (using password: NO)
+2025-02-19 20:32:56 [info]: POST /api/v1/users/register 500 6.766 ms - 1316
+2025-02-19 20:34:59 [error]: Request failed Access denied for user 'root'@'localhost' (using password: NO)
+2025-02-19 20:34:59 [info]: POST /api/v1/users/register 500 4.540 ms - 1316
+2025-02-19 20:35:20 [error]: Request failed Access denied for user 'root'@'localhost' (using password: NO)
+2025-02-19 20:35:20 [info]: POST /api/v1/users/register 500 7.051 ms - 1316
+2025-02-19 20:37:38 [error]: Request failed Access denied for user 'root'@'localhost' (using password: NO)
+2025-02-19 20:37:38 [info]: POST /api/v1/users/register 500 8.509 ms - 1316
+2025-02-19 20:41:07 [error]: Request failed Access denied for user 'root'@'localhost' (using password: NO)
+2025-02-19 20:41:07 [info]: POST /api/v1/users/register 500 5.902 ms - 1316
+2025-02-19 20:41:15 [info]: Server is running on port 3000
+2025-02-19 20:41:15 [error]: Request failed Access denied for user 'root'@'localhost' (using password: NO)
+2025-02-19 20:41:15 [info]: POST /api/v1/users/register 500 64.052 ms - 1316
+2025-02-19 20:47:45 [error]: Request failed Access denied for user 'root'@'localhost' (using password: NO)
+2025-02-19 20:47:45 [info]: POST /api/v1/users/register 500 10.591 ms - 1316
+2025-02-19 20:49:20 [error]: Request failed Access denied for user 'root'@'localhost' (using password: NO)
+2025-02-19 20:49:20 [info]: POST /api/v1/users/register 500 5.579 ms - 1316
+2025-02-19 20:49:31 [info]: Server is running on port 3000
+2025-02-19 20:49:32 [error]: Request failed Access denied for user 'root'@'localhost' (using password: NO)
+2025-02-19 20:49:32 [info]: POST /api/v1/users/register 500 53.938 ms - 1316
+2025-02-19 20:57:25 [error]: Request failed Access denied for user 'root'@'localhost' (using password: NO)
+2025-02-19 20:57:25 [info]: POST /api/v1/users/register 500 7.980 ms - 1316
+2025-02-19 21:00:04 [error]: Request failed Access denied for user 'root'@'localhost' (using password: NO)
+2025-02-19 21:00:04 [info]: POST /api/v1/users/register 500 5.888 ms - 1316
+2025-02-19 21:00:10 [error]: Request failed Access denied for user 'root'@'localhost' (using password: NO)
+2025-02-19 21:00:10 [info]: POST /api/v1/users/register 500 3.986 ms - 1316
+2025-02-19 21:06:07 [error]: Request failed Access denied for user 'root'@'localhost' (using password: NO)
+2025-02-19 21:06:07 [info]: POST /api/v1/users/register 500 7.240 ms - 1316
+2025-02-19 21:06:15 [info]: Server is running on port 3000
+2025-02-19 21:06:17 [error]: Request failed Access denied for user 'root'@'localhost' (using password: NO)
+2025-02-19 21:06:17 [info]: POST /api/v1/users/register 500 61.761 ms - 1316
+2025-02-19 21:06:20 [error]: Request failed Access denied for user 'root'@'localhost' (using password: NO)
+2025-02-19 21:06:20 [info]: POST /api/v1/users/register 500 5.943 ms - 1316
+2025-02-19 21:10:24 [info]: Server is running on port 3000
+2025-02-19 21:10:26 [error]: Request failed Access denied for user 'root'@'localhost' (using password: NO)
+2025-02-19 21:10:26 [info]: POST /api/v1/users/register 500 50.805 ms - 1316
+2025-02-19 21:10:26 [error]: Request failed Access denied for user 'root'@'localhost' (using password: NO)
+2025-02-19 21:10:26 [info]: POST /api/v1/users/register 500 5.243 ms - 1316
+2025-02-19 21:35:31 [info]: Server is running on port 3000
+2025-02-19 21:35:49 [error]: Request failed Access denied for user 'root'@'localhost' (using password: NO)
+2025-02-19 21:35:49 [info]: POST /api/v1/users/register 500 61.239 ms - 1316
+2025-02-19 21:42:03 [info]: Server is running on port 3000
+2025-02-19 21:42:15 [info]: POST /api/v1/users/register 201 150.710 ms - 73
+2025-02-19 21:43:44 [info]: Server is running on port 3000
+2025-02-19 21:44:03 [info]: Server is running on port 3000
+2025-02-19 21:44:31 [info]: Server is running on port 3000
+2025-02-19 21:44:31 [error]: Request failed Email already registered
+2025-02-19 21:44:31 [info]: POST /api/v1/users/register 500 54.168 ms - 445
+2025-02-19 21:44:36 [error]: Request failed Username already taken
+2025-02-19 21:44:36 [info]: POST /api/v1/users/register 500 5.232 ms - 441
+2025-02-19 21:44:41 [info]: POST /api/v1/users/register 201 65.345 ms - 73
+2025-02-19 21:47:21 [info]: Server is running on port 3000
+2025-02-19 21:47:34 [error]: Request failed insert into `users` (`email`, `fullname`, `id`, `password`, `username`) values ('john2@example.com', 'john', '2c748cf7-903f-4801-90bc-1b65047c0921', '$2b$10$WQvFeNdzgQ.dlu9ePHwXjes/7cUchuuO.bng1ozTIEECyryUxGPnm', 'john2') - Data truncated for column 'id' at row 1
+2025-02-19 21:47:34 [info]: POST /api/v1/users/register 500 109.251 ms - 1912
+2025-02-19 21:51:57 [info]: Server is running on port 3000
+2025-02-19 21:52:05 [info]: POST /api/v1/users/register 201 121.091 ms - 110
+2025-02-19 21:53:21 [info]: Server is running on port 3000
+2025-02-19 21:53:39 [info]: POST /api/v1/users/register 201 112.500 ms - 149
+2025-02-19 21:56:22 [info]: Server is running on port 3000
+2025-02-19 21:59:09 [info]: Server is running on port 3000
