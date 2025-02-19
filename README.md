@@ -14,7 +14,7 @@ A backend REST API for managing todos with authentication built with Node.js, Ex
 ## Prerequisites
 
 - Node.js
-- MySQL database
+- MySQL database (SQL dump file available in `./src/docs/todo_db.sql`)
 
 ## Setup
 
