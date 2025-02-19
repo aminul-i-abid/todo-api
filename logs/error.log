@@ -138,3 +138,17 @@
 2025-02-19 23:23:36 [error]: Request failed Cannot read properties of undefined (reading 'id')
 2025-02-19 23:27:00 [error]: Request failed Can't find /auth/refresh-token on this server!
 2025-02-19 23:27:25 [error]: Request failed Can't find /api/v1/auth/refresh-token on this server!
+2025-02-19 23:57:42 [error]: Request failed Can't find /api/v1/users/todo on this server!
+2025-02-20 00:00:24 [error]: Request failed insert into `todos` (`created_at`, `id`, `is_completed`, `title`, `updated_at`, `user_id`) values ('2025-02-20 00:00:24.731', '9bf07322-6561-48ac-8be7-b82025f16816', false, 't1', '2025-02-20 00:00:24.731', '7b55a06a-1c76-418d-b21b-703f89f49d75') - Unknown column 'is_completed' in 'field list'
+2025-02-20 00:02:10 [error]: Request failed Expected ',' or '}' after property value in JSON at position 20 (line 3 column 3)
+2025-02-20 00:10:24 [error]: Request failed Can't find /api/v1/todos/ccf68aaa-d8ef-48d5-b8b8-f72b2e69d8fb on this server!
+2025-02-20 00:13:22 [error]: Request failed Can't find /api/v1/todos/ccf68aaa-d8ef-48d5-b8b8-f72b2e69d8fb/toggle on this server!
+2025-02-20 00:13:30 [error]: Request failed update `todos` set `is_completed` = true, `updated_at` = '2025-02-20 00:13:30.800' where `id` = 'ccf68aaa-d8ef-48d5-b8b8-f72b2e69d8fb' - Unknown column 'is_completed' in 'field list'
+2025-02-20 00:17:03 [error]: Request failed Can't find /api/v1/todos on this server!
+2025-02-20 00:18:55 [error]: Request failed Can't find /api/v1/health on this server!
+2025-02-20 00:19:39 [error]: Request failed Can't find /api/v1/health on this server!
+2025-02-20 00:19:41 [error]: Request failed Can't find /api/v1/health on this server!
+2025-02-20 00:24:24 [error]: Request failed Can't find /api/v1/todos on this server!
+2025-02-20 00:24:43 [error]: Request failed Can't find /api/v1/todos on this server!
+2025-02-20 00:28:03 [error]: Request failed Can't find /api/v1/todos on this server!
+2025-02-20 00:52:40 [error]: Request failed Can't find /api/v1/todos/ccf68aaa-d8ef-48d5-b8b8-f72b2e69d8fb/toggle on this server!

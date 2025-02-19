@@ -42,6 +42,14 @@ app.use(express.urlencoded({ extended: false }));
 // routers
 app.use("/api/v1", v1Router);
 
+// health check
+app.get("/api/v1/health", (_req, res) => {
+  res.status(200).json({
+    code: 200,
+    message: "Server is running",
+  });
+});
+
 // Error handlers
 app.use(notFoundHandler); // 404 handler
 app.use(globalErrorHandler); // Global error handler

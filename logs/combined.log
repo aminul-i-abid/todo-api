@@ -300,3 +300,100 @@
 2025-02-19 23:45:50 [info]: POST /api/v1/users/refresh-token 401 0.597 ms - 65
 2025-02-19 23:45:54 [info]: POST /api/v1/users/refresh-token 401 5.480 ms - 69
 2025-02-19 23:46:23 [info]: POST /api/v1/users/logout 200 4.822 ms - 60
+2025-02-19 23:54:29 [info]: Server is running on port 3000
+2025-02-19 23:55:26 [info]: POST /api/v1/users/login 200 119.899 ms - 617
+2025-02-19 23:56:19 [info]: Server is running on port 3000
+2025-02-19 23:57:42 [warn]: Route not found: POST /api/v1/users/todo
+2025-02-19 23:57:42 [error]: Request failed Can't find /api/v1/users/todo on this server!
+2025-02-19 23:57:42 [info]: POST /api/v1/users/todo 404 21.752 ms - 1293
+2025-02-20 00:00:11 [info]: POST /api/v1/todos/create 400 6.756 ms - 110
+2025-02-20 00:00:24 [error]: Request failed insert into `todos` (`created_at`, `id`, `is_completed`, `title`, `updated_at`, `user_id`) values ('2025-02-20 00:00:24.731', '9bf07322-6561-48ac-8be7-b82025f16816', false, 't1', '2025-02-20 00:00:24.731', '7b55a06a-1c76-418d-b21b-703f89f49d75') - Unknown column 'is_completed' in 'field list'
+2025-02-20 00:00:24 [info]: POST /api/v1/todos/create 500 47.897 ms - 2001
+2025-02-20 00:01:05 [info]: Server is running on port 3000
+2025-02-20 00:01:13 [info]: POST /api/v1/todos/create 201 59.124 ms - 263
+2025-02-20 00:01:46 [info]: Server is running on port 3000
+2025-02-20 00:01:52 [info]: Server is running on port 3000
+2025-02-20 00:01:56 [info]: POST /api/v1/todos/create 400 15.863 ms - 116
+2025-02-20 00:02:10 [error]: Request failed Expected ',' or '}' after property value in JSON at position 20 (line 3 column 3)
+2025-02-20 00:02:10 [info]: POST /api/v1/todos/create 400 5.739 ms - 1132
+2025-02-20 00:02:17 [info]: POST /api/v1/todos/create 201 40.836 ms - 287
+2025-02-20 00:02:44 [info]: GET /api/v1/todos 200 6.839 ms - 509
+2025-02-20 00:07:38 [info]: POST /api/v1/users/logout 400 1.226 ms - 117
+2025-02-20 00:07:55 [info]: POST /api/v1/users/logout 200 3.360 ms - 60
+2025-02-20 00:08:01 [info]: GET /api/v1/todos 200 6.245 ms - 509
+2025-02-20 00:08:06 [info]: GET /api/v1/todos 401 0.504 ms - 65
+2025-02-20 00:08:12 [info]: GET /api/v1/todos 200 4.466 ms - 509
+2025-02-20 00:08:25 [info]: GET /api/v1/todos 200 4.387 ms - 509
+2025-02-20 00:09:40 [info]: GET /api/v1/todos/ccf68aaa-d8ef-48d5-b8b8-f72b2e69d8fb 200 3.810 ms - 285
+2025-02-20 00:10:00 [info]: GET /api/v1/todos/ccf68aaa-d8ef-48d5-b8b8-rf72b2e69d8fb 404 2.854 ms - 59
+2025-02-20 00:10:24 [warn]: Route not found: POST /api/v1/todos/ccf68aaa-d8ef-48d5-b8b8-f72b2e69d8fb
+2025-02-20 00:10:24 [error]: Request failed Can't find /api/v1/todos/ccf68aaa-d8ef-48d5-b8b8-f72b2e69d8fb on this server!
+2025-02-20 00:10:24 [info]: POST /api/v1/todos/ccf68aaa-d8ef-48d5-b8b8-f72b2e69d8fb 404 7.364 ms - 1136
+2025-02-20 00:10:55 [info]: PATCH /api/v1/todos/ccf68aaa-d8ef-48d5-b8b8-f72b2e69d8fb 200 8.976 ms - 284
+2025-02-20 00:11:00 [info]: GET /api/v1/todos/ccf68aaa-d8ef-48d5-b8b8-f72b2e69d8fb 200 3.547 ms - 286
+2025-02-20 00:11:14 [info]: PATCH /api/v1/todos/ccf68aaa-d8ef-4k8d5-b8b8-f72b2e69d8fb 404 2.839 ms - 59
+2025-02-20 00:11:38 [info]: DELETE /api/v1/todos/d3f968f7-2acb-4e42-9c37-ef66ff5118d5 200 8.367 ms - 62
+2025-02-20 00:11:50 [info]: DELETE /api/v1/todos/ccf68agaa-d8ef-48d5-b8b8-f72b2e69d8fb 404 2.907 ms - 59
+2025-02-20 00:13:22 [warn]: Route not found: DELETE /api/v1/todos/ccf68aaa-d8ef-48d5-b8b8-f72b2e69d8fb/toggle
+2025-02-20 00:13:22 [error]: Request failed Can't find /api/v1/todos/ccf68aaa-d8ef-48d5-b8b8-f72b2e69d8fb/toggle on this server!
+2025-02-20 00:13:22 [info]: DELETE /api/v1/todos/ccf68aaa-d8ef-48d5-b8b8-f72b2e69d8fb/toggle 404 3.535 ms - 1150
+2025-02-20 00:13:30 [error]: Request failed update `todos` set `is_completed` = true, `updated_at` = '2025-02-20 00:13:30.800' where `id` = 'ccf68aaa-d8ef-48d5-b8b8-f72b2e69d8fb' - Unknown column 'is_completed' in 'field list'
+2025-02-20 00:13:30 [info]: PATCH /api/v1/todos/ccf68aaa-d8ef-48d5-b8b8-f72b2e69d8fb/toggle 500 7.445 ms - 1668
+2025-02-20 00:13:51 [info]: Server is running on port 3000
+2025-02-20 00:13:53 [info]: PATCH /api/v1/todos/ccf68aaa-d8ef-48d5-b8b8-f72b2e69d8fb/toggle 200 61.889 ms - 294
+2025-02-20 00:14:00 [info]: PATCH /api/v1/todos/ccf68aaa-d8ef-48d5-b8b8-f72b2e69d8fb/toggle 200 8.941 ms - 294
+2025-02-20 00:14:11 [info]: Server is running on port 3000
+2025-02-20 00:14:38 [info]: PATCH /api/v1/todos/ccf68aaa-d8ef-48d5-b8b8-f72b2e69d8fb/toggle 200 63.216 ms - 295
+2025-02-20 00:14:42 [info]: PATCH /api/v1/todos/ccf68aaa-d8ef-48d5-b8b8-f72b2e69d8fb/toggle 200 9.681 ms - 294
+2025-02-20 00:14:43 [info]: PATCH /api/v1/todos/ccf68aaa-d8ef-48d5-b8b8-f72b2e69d8fb/toggle 200 7.363 ms - 295
+2025-02-20 00:15:47 [info]: Server is running on port 3000
+2025-02-20 00:15:56 [info]: POST /api/v1/todos 401 15.800 ms - 65
+2025-02-20 00:17:03 [warn]: Route not found: POST /api/v1/todos
+2025-02-20 00:17:03 [error]: Request failed Can't find /api/v1/todos on this server!
+2025-02-20 00:17:03 [info]: POST /api/v1/todos 404 13.865 ms - 1062
+2025-02-20 00:18:47 [info]: Server is running on port 3000
+2025-02-20 00:18:55 [warn]: Route not found: GET /api/v1/health
+2025-02-20 00:18:55 [error]: Request failed Can't find /api/v1/health on this server!
+2025-02-20 00:18:55 [info]: GET /api/v1/health 404 9.905 ms - 1303
+2025-02-20 00:19:35 [info]: Server is running on port 3000
+2025-02-20 00:19:39 [warn]: Route not found: GET /api/v1/health
+2025-02-20 00:19:39 [error]: Request failed Can't find /api/v1/health on this server!
+2025-02-20 00:19:39 [info]: GET /api/v1/health 404 10.614 ms - 1303
+2025-02-20 00:19:41 [warn]: Route not found: GET /api/v1/health
+2025-02-20 00:19:41 [error]: Request failed Can't find /api/v1/health on this server!
+2025-02-20 00:19:41 [info]: GET /api/v1/health 404 2.556 ms - 1303
+2025-02-20 00:20:04 [info]: Server is running on port 3000
+2025-02-20 00:20:08 [info]: GET /api/v1/health 200 3.369 ms - 2
+2025-02-20 00:21:04 [info]: Server is running on port 3000
+2025-02-20 00:22:53 [info]: Server is running on port 3000
+2025-02-20 00:22:57 [info]: GET /api/v1/health 200 2.022 ms - 50
+2025-02-20 00:23:34 [info]: Server is running on port 3000
+2025-02-20 00:23:34 [info]: GET /api/v1/health 200 3.529 ms - 42
+2025-02-20 00:24:03 [info]: GET /api/v1/health 304 0.882 ms - -
+2025-02-20 00:24:24 [warn]: Route not found: POST /api/v1/todos
+2025-02-20 00:24:24 [error]: Request failed Can't find /api/v1/todos on this server!
+2025-02-20 00:24:24 [info]: POST /api/v1/todos 404 22.408 ms - 1062
+2025-02-20 00:24:43 [warn]: Route not found: POST /api/v1/todos
+2025-02-20 00:24:43 [error]: Request failed Can't find /api/v1/todos on this server!
+2025-02-20 00:24:43 [info]: POST /api/v1/todos 404 4.708 ms - 1062
+2025-02-20 00:27:00 [info]: GET /api/v1/todos 200 46.291 ms - 289
+2025-02-20 00:28:03 [warn]: Route not found: POST /api/v1/todos
+2025-02-20 00:28:03 [error]: Request failed Can't find /api/v1/todos on this server!
+2025-02-20 00:28:03 [info]: POST /api/v1/todos 404 3.381 ms - 1062
+2025-02-20 00:29:06 [info]: Server is running on port 3000
+2025-02-20 00:29:09 [info]: POST /api/v1/todos 201 71.720 ms - 308
+2025-02-20 00:31:33 [info]: GET /api/v1/todos/ccf68aaa-d8ef-48d5-b8b8-f72b2e69d8fb 200 6.769 ms - 286
+2025-02-20 00:36:00 [info]: PATCH /api/v1/todos/ccf68aaa-d8ef-48d5-b8b8-f72b2e69d8fb/toggle 200 9.923 ms - 294
+2025-02-20 00:37:11 [info]: Server is running on port 3000
+2025-02-20 00:40:12 [info]: Server is running on port 3000
+2025-02-20 00:40:22 [info]: GET /api/v1/health 304 2.063 ms - -
+2025-02-20 00:42:19 [info]: Server is running on port 3000
+2025-02-20 00:52:20 [info]: Server is running on port 3000
+2025-02-20 00:52:27 [info]: DELETE /api/v1/todos/ccf68aaa-d8ef-48d5-b8b8-f72b2e69d8fb/toggle 401 1.990 ms - 65
+2025-02-20 00:52:40 [warn]: Route not found: DELETE /api/v1/todos/ccf68aaa-d8ef-48d5-b8b8-f72b2e69d8fb/toggle
+2025-02-20 00:52:40 [error]: Request failed Can't find /api/v1/todos/ccf68aaa-d8ef-48d5-b8b8-f72b2e69d8fb/toggle on this server!
+2025-02-20 00:52:40 [info]: DELETE /api/v1/todos/ccf68aaa-d8ef-48d5-b8b8-f72b2e69d8fb/toggle 404 11.333 ms - 1150
+2025-02-20 00:53:56 [info]: Server is running on port 3000
+2025-02-20 00:54:12 [info]: DELETE /api/v1/todos/ccf68aaa-d8ef-48d5-b8b8-f72b2e69d8fb 401 3.141 ms - 65
+2025-02-20 00:54:22 [info]: DELETE /api/v1/todos/ccf68aaa-d8ef-48d5-b8b8-f72b2e69d8fb 200 47.331 ms - 62
+2025-02-20 00:55:52 [info]: Server is running on port 3000
