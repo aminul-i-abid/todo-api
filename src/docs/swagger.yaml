@@ -1,0 +1,334 @@
+openapi: 3.0.0
+info:
+  title: Todo API
+  description: Backend API for managing todos with authentication
+  version: 1.0.0
+
+servers:
+  - url: "{protocol}://{host}"
+    description: Dynamic Server
+    variables:
+      protocol:
+        default: "http"
+        enum:
+          - "http"
+          - "https"
+      host:
+        default: "localhost:3000"
+
+paths:
+  /auth/register:
+    post:
+      summary: Register a new user
+      tags:
+        - Authentication
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - fullname
+                - username
+                - email
+                - password
+              properties:
+                fullname:
+                  type: string
+                  example: "John Doe"
+                username:
+                  type: string
+                  example: "johndoe"
+                email:
+                  type: string
+                  format: email
+                  example: "john@example.com"
+                password:
+                  type: string
+                  format: password
+                  example: "password123"
+      responses:
+        "201":
+          description: User registered successfully
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SuccessResponse"
+              example:
+                code: 201
+                message: "Account created successfully"
+                data:
+                  userId: 1
+                  createdAt: "2025-02-19T12:34:56Z"
+        "400":
+          $ref: "#/components/responses/ValidationError"
+
+  /auth/login:
+    post:
+      summary: Login user and receive a token
+      tags:
+        - Authentication
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - email
+                - password
+              properties:
+                email:
+                  type: string
+                  format: email
+                  example: "john@example.com"
+                password:
+                  type: string
+                  format: password
+                  example: "password123"
+      responses:
+        "200":
+          description: Successfully logged in
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SuccessResponse"
+              example:
+                code: 200
+                message: "Login successful"
+                data:
+                  accessToken: "eyJhbGciOiJIUzI1NiIsIn..."
+        "401":
+          $ref: "#/components/responses/UnauthorizedError"
+
+  /auth/logout:
+    post:
+      summary: Logout the user
+      tags:
+        - Authentication
+      security:
+        - BearerAuth: []
+      responses:
+        "200":
+          description: Successfully logged out
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SuccessResponse"
+              example:
+                code: 200
+                message: "User logged out successfully"
+
+  /todos:
+    post:
+      summary: Create a new todo
+      tags:
+        - Todos
+      security:
+        - BearerAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - title
+              properties:
+                title:
+                  type: string
+                  example: "Buy groceries"
+                description:
+                  type: string
+                  example: "Milk, Bread, Eggs"
+      responses:
+        "201":
+          description: Todo created successfully
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SuccessResponse"
+              example:
+                code: 201
+                message: "Todo created successfully"
+                data:
+                  todoId: 1
+                  createdAt: "2025-02-19T12:34:56Z"
+        "400":
+          $ref: "#/components/responses/ValidationError"
+
+    get:
+      summary: Get all todos of the logged-in user
+      tags:
+        - Todos
+      security:
+        - BearerAuth: []
+      responses:
+        "200":
+          description: List of user’s todos
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SuccessResponse"
+              example:
+                code: 200
+                message: "Fetched todos successfully"
+                data:
+                  - id: 1
+                    title: "Buy groceries"
+                    description: "Milk, Bread, Eggs"
+                    createdAt: "2025-02-19T12:34:56Z"
+
+  /todos/{id}:
+    patch:
+      summary: Update a todo by ID
+      tags:
+        - Todos
+      security:
+        - BearerAuth: []
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: integer
+          example: 1
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                title:
+                  type: string
+                  example: "Updated title"
+                description:
+                  type: string
+                  example: "Updated description"
+      responses:
+        "200":
+          description: Todo updated successfully
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SuccessResponse"
+              example:
+                code: 200
+                message: "Todo updated successfully"
+                data:
+                  id: 1
+                  title: "Updated title"
+                  description: "Updated description"
+                  updatedAt: "2025-02-19T12:45:00Z"
+        "400":
+          $ref: "#/components/responses/ValidationError"
+        "404":
+          $ref: "#/components/responses/NotFoundError"
+
+    delete:
+      summary: Delete a todo by ID
+      tags:
+        - Todos
+      security:
+        - BearerAuth: []
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: integer
+          example: 1
+      responses:
+        "200":
+          description: Todo deleted successfully
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SuccessResponse"
+              example:
+                code: 200
+                message: "Todo deleted successfully"
+        "404":
+          $ref: "#/components/responses/NotFoundError"
+
+components:
+  securitySchemes:
+    BearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
+
+  schemas:
+    SuccessResponse:
+      type: object
+      properties:
+        code:
+          type: integer
+          example: 200
+        message:
+          type: string
+          example: "Success"
+        data:
+          type: object
+          nullable: true
+
+    ErrorResponse:
+      type: object
+      properties:
+        code:
+          type: integer
+          example: 400
+        error:
+          type: string
+          example: "Bad Request"
+        data:
+          type: object
+          properties:
+            field:
+              type: string
+              example: "email"
+            message:
+              type: string
+              example: "Invalid email"
+
+  responses:
+    ValidationError:
+      description: Validation error
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/ErrorResponse"
+          example:
+            code: 400
+            error: "Bad Request"
+            data:
+              field: "fieldName"
+              message: "Invalid field"
+
+    UnauthorizedError:
+      description: Unauthorized access
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/ErrorResponse"
+          example:
+            code: 401
+            error: "Unauthorized"
+            data:
+              field: "authentication"
+              message: "Invalid credentials"
+
+    NotFoundError:
+      description: Resource not found
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/ErrorResponse"
+          example:
+            code: 404
+            error: "Not Found"
+            data:
+              field: "todoId"
+              message: "Todo not found"

@@ -1,1 +1,4 @@
 2025-02-19 17:12:55 [error]: Request failed Can't find /api/v1/test-error on this server!
+2025-02-19 18:06:44 [error]: Request failed Can't find / on this server!
+2025-02-19 18:06:44 [error]: Request failed Can't find /favicon.ico on this server!
+2025-02-19 18:10:59 [error]: Request failed Can't find /auth/login on this server!

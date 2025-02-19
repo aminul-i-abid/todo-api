@@ -4,6 +4,8 @@ import dotenv from "dotenv";
 import express from "express";
 import helmet from "helmet";
 import morgan, { StreamOptions } from "morgan";
+import SwaggerUI from "swagger-ui-express";
+import yaml from "yamljs";
 import logger from "./config/logger";
 import {
   globalErrorHandler,
@@ -17,6 +19,8 @@ dotenv.config();
 const app = express();
 const port = process.env.PORT || 3000;
 
+const swaggerDocument = yaml.load("./src/docs/swagger.yaml");
+
 // Create a write stream for Morgan
 const stream: StreamOptions = {
   write: (message: string) => {
@@ -25,6 +29,7 @@ const stream: StreamOptions = {
 };
 
 // middlewares
+app.use("/docs", SwaggerUI.serve, SwaggerUI.setup(swaggerDocument));
 app.use(
   morgan(process.env.NODE_ENV === "production" ? "combined" : "dev", { stream })
 );
