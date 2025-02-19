@@ -99,6 +99,10 @@ paths:
                 message: "Login successful"
                 data:
                   accessToken: "eyJhbGciOiJIUzI1NiIsIn..."
+                  data:
+                    id: 1
+                    username: "johndoe"
+                    email: "john@example.com"
         "401":
           $ref: "#/components/responses/UnauthorizedError"
 
@@ -119,6 +123,47 @@ paths:
               example:
                 code: 200
                 message: "User logged out successfully"
+                data: null
+  /auth/refresh-token:
+    post:
+      summary: Refresh access token using refresh token
+      tags:
+        - Authentication
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - refreshToken
+              example:
+                code: 200
+                message: "Token refreshed successfully"
+                data:
+                  accessToken: "eyJhbGciOiJIUzI1NiIsIn..."
+                  refreshToken: "eyJhbGciOiJIUzI1NiIsIn..."
+                  user:
+                    id: 1
+                    username: "johndoe"
+                    email: "john@example.com"
+
+      responses:
+        "200":
+          description: New access token generated
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  accessToken:
+                    type: string
+                    example: "eyJhbGciOiJIUzI1NiIsIn..."
+                  refreshToken:
+                    type: string
+                    example: "eyJhbGciOiJIUzI1NiIsIn..."
+        "401":
+          $ref: "#/components/responses/UnauthorizedError"
 
   /todos:
     post:
@@ -302,6 +347,7 @@ components:
             $ref: "#/components/schemas/ErrorResponse"
           example:
             code: 400
+            message: "Validation error"
             error: "Bad Request"
             data:
               field: "fieldName"
@@ -315,6 +361,7 @@ components:
             $ref: "#/components/schemas/ErrorResponse"
           example:
             code: 401
+            message: "Unauthorized access"
             error: "Unauthorized"
             data:
               field: "authentication"
@@ -328,6 +375,7 @@ components:
             $ref: "#/components/schemas/ErrorResponse"
           example:
             code: 404
+            message: "Resource not found"
             error: "Not Found"
             data:
               field: "todoId"

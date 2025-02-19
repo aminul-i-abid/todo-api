@@ -17,3 +17,8 @@ export interface UserResponseDTO {
   created_at: Date;
   updated_at: Date;
 }
+
+export interface UserLoginDTO {
+  email: string;
+  password: string;
+}

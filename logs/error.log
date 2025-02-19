@@ -121,3 +121,20 @@
 2025-02-19 21:44:31 [error]: Request failed Email already registered
 2025-02-19 21:44:36 [error]: Request failed Username already taken
 2025-02-19 21:47:34 [error]: Request failed insert into `users` (`email`, `fullname`, `id`, `password`, `username`) values ('john2@example.com', 'john', '2c748cf7-903f-4801-90bc-1b65047c0921', '$2b$10$WQvFeNdzgQ.dlu9ePHwXjes/7cUchuuO.bng1ozTIEECyryUxGPnm', 'john2') - Data truncated for column 'id' at row 1
+2025-02-19 22:32:07 [error]: Request failed Invalid email or password
+2025-02-19 22:33:58 [error]: Request failed Invalid email or password
+2025-02-19 22:38:05 [error]: Request failed Invalid email or password
+2025-02-19 22:50:00 [error]: Request failed Email already registered
+2025-02-19 22:50:22 [error]: Request failed Email already registered
+2025-02-19 22:51:16 [error]: Request failed Username already taken
+2025-02-19 23:19:18 [error]: Request failed Cannot read properties of undefined (reading 'id')
+2025-02-19 23:20:04 [error]: Request failed secretOrPrivateKey must have a value
+2025-02-19 23:20:07 [error]: Request failed secretOrPrivateKey must have a value
+2025-02-19 23:20:08 [error]: Request failed secretOrPrivateKey must have a value
+2025-02-19 23:20:08 [error]: Request failed secretOrPrivateKey must have a value
+2025-02-19 23:20:24 [error]: Request failed secretOrPrivateKey must have a value
+2025-02-19 23:20:24 [error]: Request failed secretOrPrivateKey must have a value
+2025-02-19 23:21:07 [error]: Request failed secretOrPrivateKey must have a value
+2025-02-19 23:23:36 [error]: Request failed Cannot read properties of undefined (reading 'id')
+2025-02-19 23:27:00 [error]: Request failed Can't find /auth/refresh-token on this server!
+2025-02-19 23:27:25 [error]: Request failed Can't find /api/v1/auth/refresh-token on this server!

@@ -188,3 +188,115 @@
 2025-02-19 21:53:39 [info]: POST /api/v1/users/register 201 112.500 ms - 149
 2025-02-19 21:56:22 [info]: Server is running on port 3000
 2025-02-19 21:59:09 [info]: Server is running on port 3000
+2025-02-19 22:19:27 [info]: Server is running on port 3000
+2025-02-19 22:19:36 [info]: POST /api/v1/users/register 400 13.935 ms - 113
+2025-02-19 22:21:36 [info]: Server is running on port 3000
+2025-02-19 22:21:43 [info]: POST /api/v1/users/register 400 12.795 ms - 113
+2025-02-19 22:23:18 [info]: Server is running on port 3000
+2025-02-19 22:24:31 [info]: Server is running on port 3000
+2025-02-19 22:25:04 [info]: POST /api/v1/users/register 400 14.463 ms - 113
+2025-02-19 22:25:08 [info]: POST /api/v1/users/register 201 109.809 ms - 149
+2025-02-19 22:30:45 [info]: Server is running on port 3000
+2025-02-19 22:32:07 [error]: Request failed Invalid email or password
+2025-02-19 22:32:07 [info]: POST /api/v1/users/login 401 52.753 ms - 466
+2025-02-19 22:33:58 [error]: Request failed Invalid email or password
+2025-02-19 22:33:58 [info]: POST /api/v1/users/login 401 4.721 ms - 466
+2025-02-19 22:35:28 [info]: POST /api/v1/users/login 400 1.603 ms - 113
+2025-02-19 22:37:59 [info]: Server is running on port 3000
+2025-02-19 22:38:00 [info]: POST /api/v1/users/login 400 14.756 ms - 113
+2025-02-19 22:38:05 [error]: Request failed Invalid email or password
+2025-02-19 22:38:05 [info]: POST /api/v1/users/login 401 43.694 ms - 466
+2025-02-19 22:38:41 [info]: POST /api/v1/users/login 200 62.321 ms - 416
+2025-02-19 22:43:39 [info]: Server is running on port 3000
+2025-02-19 22:43:44 [info]: POST /api/v1/users/login 401 109.504 ms - 136
+2025-02-19 22:43:53 [info]: POST /api/v1/users/login 200 61.269 ms - 416
+2025-02-19 22:43:56 [info]: POST /api/v1/users/login 200 59.205 ms - 416
+2025-02-19 22:43:57 [info]: POST /api/v1/users/login 200 59.065 ms - 416
+2025-02-19 22:49:23 [info]: Server is running on port 3000
+2025-02-19 22:49:29 [info]: POST /api/v1/users/login 200 107.696 ms - 316
+2025-02-19 22:49:57 [info]: Server is running on port 3000
+2025-02-19 22:50:00 [error]: Request failed Email already registered
+2025-02-19 22:50:00 [info]: POST /api/v1/users/register 500 53.734 ms - 445
+2025-02-19 22:50:04 [info]: POST /api/v1/users/login 200 62.606 ms - 416
+2025-02-19 22:50:22 [error]: Request failed Email already registered
+2025-02-19 22:50:22 [info]: POST /api/v1/users/register 500 4.197 ms - 445
+2025-02-19 22:51:16 [error]: Request failed Username already taken
+2025-02-19 22:51:16 [info]: POST /api/v1/users/register 500 4.065 ms - 441
+2025-02-19 22:53:20 [info]: Server is running on port 3000
+2025-02-19 22:55:22 [info]: Server is running on port 3000
+2025-02-19 22:56:45 [info]: Server is running on port 3000
+2025-02-19 22:57:13 [info]: Server is running on port 3000
+2025-02-19 22:57:27 [info]: Server is running on port 3000
+2025-02-19 22:57:30 [info]: POST /api/v1/users/register 409 56.697 ms - 126
+2025-02-19 22:57:39 [info]: POST /api/v1/users/register 409 2.836 ms - 126
+2025-02-19 22:57:49 [info]: POST /api/v1/users/register 409 3.040 ms - 126
+2025-02-19 23:01:07 [info]: Server is running on port 3000
+2025-02-19 23:01:07 [info]: POST /api/v1/users/register 409 54.030 ms - 115
+2025-02-19 23:01:09 [info]: POST /api/v1/users/register 409 2.704 ms - 115
+2025-02-19 23:01:15 [info]: POST /api/v1/users/register 409 3.013 ms - 112
+2025-02-19 23:01:59 [info]: Server is running on port 3000
+2025-02-19 23:01:59 [info]: POST /api/v1/users/register 409 49.339 ms - 128
+2025-02-19 23:02:00 [info]: POST /api/v1/users/register 409 4.544 ms - 128
+2025-02-19 23:02:04 [info]: POST /api/v1/users/register 409 2.852 ms - 134
+2025-02-19 23:02:08 [info]: POST /api/v1/users/register 409 2.376 ms - 128
+2025-02-19 23:02:27 [info]: Server is running on port 3000
+2025-02-19 23:04:14 [info]: Server is running on port 3000
+2025-02-19 23:04:22 [info]: Server is running on port 3000
+2025-02-19 23:18:50 [info]: Server is running on port 3000
+2025-02-19 23:19:18 [error]: Request failed Cannot read properties of undefined (reading 'id')
+2025-02-19 23:19:18 [info]: POST /api/v1/users/register 500 121.400 ms - 508
+2025-02-19 23:19:34 [info]: POST /api/v1/users/register 409 2.745 ms - 127
+2025-02-19 23:19:55 [info]: POST /api/v1/users/register 201 61.797 ms - 149
+2025-02-19 23:20:04 [error]: Request failed secretOrPrivateKey must have a value
+2025-02-19 23:20:04 [info]: POST /api/v1/users/login 500 63.646 ms - 975
+2025-02-19 23:20:07 [error]: Request failed secretOrPrivateKey must have a value
+2025-02-19 23:20:07 [info]: POST /api/v1/users/login 500 60.436 ms - 975
+2025-02-19 23:20:08 [error]: Request failed secretOrPrivateKey must have a value
+2025-02-19 23:20:08 [info]: POST /api/v1/users/login 500 59.616 ms - 975
+2025-02-19 23:20:08 [error]: Request failed secretOrPrivateKey must have a value
+2025-02-19 23:20:08 [info]: POST /api/v1/users/login 500 58.878 ms - 975
+2025-02-19 23:20:24 [error]: Request failed secretOrPrivateKey must have a value
+2025-02-19 23:20:24 [info]: POST /api/v1/users/login 500 58.808 ms - 975
+2025-02-19 23:20:24 [error]: Request failed secretOrPrivateKey must have a value
+2025-02-19 23:20:24 [info]: POST /api/v1/users/login 500 60.304 ms - 975
+2025-02-19 23:21:07 [error]: Request failed secretOrPrivateKey must have a value
+2025-02-19 23:21:07 [info]: POST /api/v1/users/login 500 59.292 ms - 975
+2025-02-19 23:23:29 [info]: Server is running on port 3000
+2025-02-19 23:23:36 [error]: Request failed Cannot read properties of undefined (reading 'id')
+2025-02-19 23:23:36 [info]: POST /api/v1/users/register 500 116.942 ms - 508
+2025-02-19 23:23:46 [info]: POST /api/v1/users/login 200 66.355 ms - 617
+2025-02-19 23:24:44 [info]: Server is running on port 3000
+2025-02-19 23:25:48 [info]: Server is running on port 3000
+2025-02-19 23:26:31 [info]: Server is running on port 3000
+2025-02-19 23:27:00 [warn]: Route not found: POST /auth/refresh-token
+2025-02-19 23:27:00 [error]: Request failed Can't find /auth/refresh-token on this server!
+2025-02-19 23:27:00 [info]: POST /auth/refresh-token 404 21.127 ms - 1352
+2025-02-19 23:27:25 [warn]: Route not found: POST /api/v1/auth/refresh-token
+2025-02-19 23:27:25 [error]: Request failed Can't find /api/v1/auth/refresh-token on this server!
+2025-02-19 23:27:25 [info]: POST /api/v1/auth/refresh-token 404 3.454 ms - 1327
+2025-02-19 23:28:37 [info]: POST /api/v1/users/refresh-token 200 62.575 ms - 629
+2025-02-19 23:28:41 [info]: POST /api/v1/users/refresh-token 401 5.310 ms - 69
+2025-02-19 23:28:43 [info]: POST /api/v1/users/refresh-token 401 3.082 ms - 69
+2025-02-19 23:29:16 [info]: POST /api/v1/users/refresh-token 200 16.996 ms - 629
+2025-02-19 23:29:38 [info]: POST /api/v1/users/logout 200 3.798 ms - 60
+2025-02-19 23:30:23 [info]: POST /api/v1/users/logout 200 6.064 ms - 60
+2025-02-19 23:30:34 [info]: POST /api/v1/users/refresh-token 401 4.288 ms - 69
+2025-02-19 23:31:03 [info]: POST /api/v1/users/login 200 65.428 ms - 617
+2025-02-19 23:31:35 [info]: POST /api/v1/users/refresh-token 200 13.657 ms - 629
+2025-02-19 23:36:19 [info]: Server is running on port 3000
+2025-02-19 23:37:19 [info]: Server is running on port 3000
+2025-02-19 23:41:12 [info]: Server is running on port 3000
+2025-02-19 23:41:14 [info]: POST /api/v1/users/refresh-token 401 13.904 ms - 65
+2025-02-19 23:41:21 [info]: POST /api/v1/users/logout 400 2.926 ms - 117
+2025-02-19 23:41:22 [info]: POST /api/v1/users/logout 400 0.652 ms - 117
+2025-02-19 23:41:31 [info]: POST /api/v1/users/logout 400 0.931 ms - 117
+2025-02-19 23:42:22 [info]: POST /api/v1/users/logout 200 50.663 ms - 60
+2025-02-19 23:42:32 [info]: POST /api/v1/users/refresh-token 401 0.534 ms - 65
+2025-02-19 23:43:42 [info]: Server is running on port 3000
+2025-02-19 23:43:51 [info]: Server is running on port 3000
+2025-02-19 23:44:27 [info]: POST /api/v1/users/refresh-token 401 15.439 ms - 65
+2025-02-19 23:44:28 [info]: POST /api/v1/users/refresh-token 401 1.121 ms - 65
+2025-02-19 23:45:28 [info]: POST /api/v1/users/login 200 111.030 ms - 617
+2025-02-19 23:45:50 [info]: POST /api/v1/users/refresh-token 401 0.597 ms - 65
+2025-02-19 23:45:54 [info]: POST /api/v1/users/refresh-token 401 5.480 ms - 69
+2025-02-19 23:46:23 [info]: POST /api/v1/users/logout 200 4.822 ms - 60
